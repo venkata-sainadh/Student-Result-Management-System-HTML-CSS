@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Result Management System</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Student Result Management System</h1>
+
+    <form id="resultForm">
+      <label for="name">Student Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="roll">Roll Number:</label>
+      <input type="text" id="roll" name="roll" required />
+
+      <label for="maths">Mathematics:</label>
+      <input type="number" id="maths" name="maths" min="0" max="100" required />
+
+      <label for="physics">Physics:</label>
+      <input
+        type="number"
+        id="physics"
+        name="physics"
+        min="0"
+        max="100"
+        required
+      />
+
+      <label for="chemistry">Chemistry:</label>
+      <input
+        type="number"
+        id="chemistry"
+        name="chemistry"
+        min="0"
+        max="100"
+        required
+      />
+
+      <button type="submit">Add Result</button>
+    </form>
+
+    <div class="table-container">
+      <table id="resultTable">
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Roll Number</th>
+            <th>Mathematics</th>
+            <th>Physics</th>
+            <th>Chemistry</th>
+            <th>Total Marks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Result data will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
